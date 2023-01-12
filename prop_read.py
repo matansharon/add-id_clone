@@ -8,4 +8,6 @@ inbox = outlook.GetDefaultFolder(6) # "6" refers to the index of a folder - in t
 messages = inbox.Items
 message = messages.GetLast()
 body_content = message.body
-print (body_content)
+body_content = body_content.split("\n")
+for i in body_content:
+    print(i)
