@@ -10,3 +10,4 @@ for file in files:
     if file.endswith('.docx'):
         convert(destintion+'/'+file, destintion+'/'+file[:-5]+'.pdf')
         print('done')
+        
